@@ -1,0 +1,56 @@
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.message > p {
+  margin-left: 10px;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px 15px;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+  margin-right: auto;
+}
+
+.message > small {
+  color: gray;
+  position: absolute;
+  right: 0;
+  bottom: -12px;
+  font-size: 8px;
+  margin-bottom: 2px;
+}
+
+.message__photo {
+  width: 5px;
+  height: 5px;
+}
+
+.message__sender {
+  /* send the div to the right side of the parent div*/
+  margin-left: auto;
+}
+
+.message__sender > .message__photo {
+  /* sets flex order to 1.  which helps to position the avatar to right side*/
+  order: 1;
+  margin-left: 15px;
+}
+
+.message__sender > small {
+  left: 0;
+}
+
+.message__sender > p {
+  background-color: #3e93fd;
+  color: white;
+}
+
+.message__sender > .message__photo {
+  display: none;
+}
